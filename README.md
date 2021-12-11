@@ -11,3 +11,8 @@ pip3 install fastapi statsmodels pydantic
 ```commandline
 python main.py
 ```
+
+## Run server
+```commandline
+uvicorn main:app --reload
+```
