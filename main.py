@@ -49,3 +49,8 @@ def predict(input, DaysToPredict):
     """
     ES = ExponentialSmoothing(endog=input, trend='add', seasonal='add', seasonal_periods=7).fit()
     return ES.forecast(DaysToPredict).tolist()
+
+# test
+history_tickets = [10, 12, 25, 20, 45, 60, 70, 12, 30, 12, 20, 45, 60, 70, 30, 12, 20, 45, 60, 70, 20, 30, 12, 20, 45,
+                   60, 70, 20]
+print(history_tickets, 7)
