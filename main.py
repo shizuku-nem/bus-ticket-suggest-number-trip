@@ -9,7 +9,7 @@ class BusData(BaseModel):
 app = FastAPI()
 
 origins = [
-    "*"
+    "*",
     "http://localhost:3003/admin/dashboard",
     "https://localhost:3003/admin/dashboard",
     "http://localhost:3003/",
@@ -51,6 +51,6 @@ def predict(input, DaysToPredict):
     return ES.forecast(DaysToPredict).tolist()
 
 # test
-history_tickets = [10, 12, 25, 20, 45, 60, 70, 12, 30, 12, 20, 45, 60, 70, 30, 12, 20, 45, 60, 70, 20, 30, 12, 20, 45,
-                   60, 70, 20]
-print(history_tickets, 7)
+# history_tickets = [10, 12, 25, 20, 45, 60, 70, 12, 30, 12, 20, 45, 60, 70, 30, 12, 20, 45, 60, 70, 20, 30, 12, 20, 45,
+#                    60, 70, 20]
+# print(history_tickets, 7)
